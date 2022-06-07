@@ -16,11 +16,10 @@
     "module-name": "0.0.1-security",
     "observer": "0.0.2",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-intersection": "^2.0.3",
-    "react-intersection-observer": "^9.1.0",
+    "react-dom": "^18.1.0",
     "react-particles-js": "^3.6.0",
     "react-router-dom": "^6.3.0",
+    "react-typed": "^1.2.0",
     "styled-components": "^5.3.5",
     "vite-plugin-editor-nav": "0.0.4"
   },
