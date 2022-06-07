@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
-import avatar from '../img/avatar.png';
+import avatar from '../img/avatar.jpg';
 
 
 function Navigation() {
@@ -14,13 +14,13 @@ function Navigation() {
                 <NavLink to='/home'>Início</NavLink>
             </li>
             <li className="nav-items">
-                <NavLink to='/home'>Sobre</NavLink>
+                <NavLink to='/about'>Sobre</NavLink>
             </li>
             <li className="nav-items">
-                <NavLink to='/home'>Resumo</NavLink>
+                <NavLink to='/resume'>Resumo</NavLink>
             </li>
             <li className="nav-items">
-                <NavLink to='/home'>Contato</NavLink>
+                <NavLink to='/contact'>Contato</NavLink>
             </li>
         </ul>
         <footer className="footer">
@@ -54,16 +54,18 @@ const NavigationStyled = styled.nav`
   .nav-items{
     width: 100%;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
     li{
       display: block;
       a{
         display: block;
         padding: .2rem 0;
         position: relative;
-        z-index: 4;
+        z-index: 10;
         &:hover{
           cursor: pointer;
+          color: white;
+          text-shadow: 0px 0px 5px white;
         }
         &::before{
           content: "";
@@ -72,8 +74,8 @@ const NavigationStyled = styled.nav`
           left: 0;
           width: 0;
           height: 100%;
-          background-color: #a4acc4;
-          transition: All 0.4s cubic-bezier(.52,.26,1,.14);
+          background-color: #5cadff;
+          transition: All 0.4s cubic-bezier(.1,-0.2,.25,.95);
           z-indec: 3;
           opacity: 0.21;
         }
